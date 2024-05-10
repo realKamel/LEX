@@ -1,0 +1,63 @@
+	1: /*
+	1: ID, name= this
+	1: ID, name= comment
+	1: */
+	2: reserved word: int
+	2: ID, name= fact
+	2: (
+	2: reserved word: int
+	2: ID, name= x
+	2: )
+	3: {
+	4: reserved word: if
+	4: (
+	4: ID, name= x
+	4: >
+	4: NUM, val= 1
+	4: )
+	5: reserved word: return
+	5: ID, name= x
+	5: *
+	5: ID, name= fact
+	5: (
+	5: ID, name= x
+	5: -
+	5: NUM, val= 1
+	5: )
+	5: ;
+	6: reserved word: else
+	7: reserved word: return
+	7: NUM, val= 1
+	7: ;
+	8: }
+	9: reserved word: void
+	9: ID, name= main
+	9: (
+	9: reserved word: void
+	9: )
+	10: {
+	11: reserved word: int
+	11: ID, name= x
+	11: ;
+	12: ID, name= x
+	12: =
+	12: ID, name= read
+	12: (
+	12: )
+	12: ;
+	13: reserved word: if
+	13: (
+	13: ID, name= x
+	13: >
+	13: NUM, val= 0
+	13: )
+	14: ID, name= write
+	14: (
+	14: ID, name= fact
+	14: (
+	14: ID, name= x
+	14: )
+	14: )
+	14: ;
+	15: }
+	15: EOF
